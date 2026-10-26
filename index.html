@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090b">
+  <meta name="description" content="Peculiar Digital — Web development, Python programming, website maintenance and graphic design.">
+  <title>Peculiar Digital | Digital Creator</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:#09090b;color:#f4f4f5;font-family:Arial,sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1080px,90%);margin:auto}
+    header{position:sticky;top:0;background:#09090bf2;border-bottom:1px solid #27272a;z-index:10}
+    nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .logo{font-size:21px;font-weight:800;letter-spacing:-1px}
+    .logo span,.accent{color:#34d399}
+    .links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:#d4d4d8}
+    .hero{padding:95px 0 85px;background:radial-gradient(ellipse at 80% 20%,#064e3b55,transparent 48%)}
+    .tag{display:inline-block;border:1px solid #166534;border-radius:50px;padding:5px 12px;color:#6ee7b7;font-size:12px}
+    h1{font-size:clamp(42px,8vw,76px);line-height:1.08;letter-spacing:-3px;margin:24px 0}
+    h2{font-size:clamp(27px,5vw,39px);line-height:1.2;margin-bottom:15px}
+    .intro,.muted{color:#a1a1aa}
+    .intro{max-width:620px;font-size:17px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:12px 19px;border-radius:9px;font-weight:bold;font-size:14px}
+    .primary{background:#34d399;color:#052e24}
+    .secondary{border:1px solid #3f3f46}
+    section{padding:70px 0;border-top:1px solid #27272a}
+    .section-intro{margin-bottom:28px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:17px}
+    .card{background:#111114;border:1px solid #27272a;border-radius:15px;padding:23px}
+    .card h3{margin-bottom:8px;font-size:19px}
+    .icon{font-size:27px;margin-bottom:12px}
+    .project{min-height:190px;display:flex;flex-direction:column;justify-content:space-between}
+    .pill{display:inline-block;color:#6ee7b7;background:#064e3b55;border-radius:30px;padding:4px 10px;font-size:12px;margin:12px 5px 0 0}
+    .contact-box{background:linear-gradient(135deg,#10251f,#111114);border:1px solid #245943;border-radius:18px;padding:30px}
+    footer{padding:25px 0;color:#a1a1aa;font-size:13px}
+    @media(max-width:600px){nav{align-items:flex-start;padding:16px 0;flex-direction:column}.links{gap:12px}.hero{padding:65px 0}h1{letter-spacing:-2px}section{padding:52px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="logo" href="#home">Peculiar<span>.</span></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Hire me</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home" style="border:0">
+    <div class="wrap">
+      <span class="tag">YOUR IDEAS, BUILT DIGITALLY</span>
+      <h1>I'm Peculiar.<br>I build for the <span class="accent">digital world.</span></h1>
+      <p class="intro">I create modern websites, explore Python programming, maintain websites and design digital experiences that help people and businesses grow.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my work ↗</a>
+        <a class="btn secondary" href="#contact">Let's work together</a>
+      </div>
+      <div style="margin-top:35px">
+        <span class="pill">Web Development</span>
+        <span class="pill">Python</span>
+        <span class="pill">Website Maintenance</span>
+        <span class="pill">Graphic Design</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-intro"><span class="accent">01 / ABOUT</span><h2>A little about me.</h2></div>
+      <p class="intro">I'm Peculiar, a growing digital creator passionate about technology, programming and building useful things. I enjoy turning ideas into real projects and improving my skills with every build.</p>
+      <p class="muted" style="margin-top:15px">My goal is to help individuals and businesses establish a strong online presence through useful, thoughtful digital solutions.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-intro"><span class="accent">02 / SERVICES</span><h2>How I can help.</h2><p class="muted">Choose a service and contact me to discuss your project.</p></div>
+      <div class="grid">
+        <article class="card"><div class="icon">🌐</div><h3>Website Development</h3><p class="muted">Responsive websites for personal brands, portfolios and small businesses.</p></article>
+        <article class="card"><div class="icon">🐍</div><h3>Python Programming</h3><p class="muted">Beginner-level scripts, simple automation and programming projects as my skills grow.</p></article>
+        <article class="card"><div class="icon">🛠️</div><h3>Website Maintenance</h3><p class="muted">Content updates, image fixes and routine website improvements.</p></article>
+        <article class="card"><div class="icon">🎨</div><h3>Graphic Design</h3><p class="muted">Digital flyers, promotional designs and visual content for brands.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-intro"><span class="accent">03 / PORTFOLIO</span><h2>Things I've built.</h2><p class="muted">A growing collection of my work. Add your live project links below when ready.</p></div>
+      <div class="grid">
+        <article class="card project">
+          <div><span class="accent">PROJECT 01</span><h3 style="margin-top:12px">Emmanuel Portrait</h3><p class="muted">A photography portfolio showcasing images, business information and ways for clients to make contact.</p></div>
+          <div><span class="pill">Website</span><span class="pill">Portfolio</span><p style="margin-top:18px"><a class="accent" href="#contact">Ask me about this project ↗</a></p></div>
+        </article>
+        <article class="card project">
+          <div><span class="accent">PROJECT 02</span><h3 style="margin-top:12px">Peculiar Digital</h3><p class="muted">My own portfolio website, built to present my services, projects and professional journey.</p></div>
+          <div><span class="pill">Personal Brand</span><span class="pill">Web Design</span></div>
+        </article>
+        <article class="card project">
+          <div><span class="accent">PROJECT 03</span><h3 style="margin-top:12px">More projects coming</h3><p class="muted">This space is ready for future Python, automation and graphic design projects.</p></div>
+          <div><span class="pill">Learning in public</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <span class="accent">04 / CONTACT</span>
+        <h2 style="margin-top:12px">Have a project in mind?</h2>
+        <p class="muted">Tell me what you need, and let's discuss how I can help.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:YOUR_EMAIL_HERE?subject=Project%20Enquiry">Email me</a>
+          <a class="btn secondary" href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+        </div>
+        <p class="muted" style="font-size:12px;margin-top:17px">Contact links will work after you replace the example placeholders with your details.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Peculiar Digital. Built with purpose.</div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
